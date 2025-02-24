@@ -159,7 +159,7 @@ function joinGuild($url, $access_token) {
 
   // Set the necessary headers
   $headers = array(
-      'Authorization: Bot MTM0MTcxNjYyMTg0ODM0NjY2NA.Gga262.VHnOGc3id5JiXWE9-SeWJUAWxvbYyvFxcgtZOU',
+      'Authorization: Bot TOKEN_HERE',
       'Content-Type: application/json',
       'Content-Length: ' . strlen($json_data)
   );
