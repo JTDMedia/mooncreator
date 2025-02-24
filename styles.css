@@ -1,0 +1,156 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1f1f2f; /* Dark background */
+    color: #e0e0e0; /* Light grey text for readability */
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #232332;
+    padding: 40px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    margin-bottom: 40px;
+}
+
+header h1 {
+    color: #8aacc8;
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.7);
+}
+
+/* Button Styles */
+header .btn, .btn {
+    background: linear-gradient(145deg, #4e5b8c, #3c4f72); /* Gradient for a smooth, stylish look */
+    color: #ffffff;
+    padding: 15px 30px;
+    border-radius: 50px; /* Rounded button */
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 178, 255, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+header .btn:hover, .btn:hover {
+    background: linear-gradient(145deg, #3c4f72, #4e5b8c); /* Invert gradient for hover effect */
+    box-shadow: 0 10px 30px rgba(0, 178, 255, 0.5); /* Glowing effect on hover */
+    transform: translateY(-5px); /* Lift effect */
+}
+
+header .btn:active, .btn:active {
+    transform: translateY(0); /* Button depresses when clicked */
+    box-shadow: 0 5px 10px rgba(0, 178, 255, 0.3); /* Slight shadow for click effect */
+}
+
+/* Intro Section */
+.intro {
+    margin-top: 60px;
+    padding: 40px;
+}
+
+.intro h2 {
+    font-size: 36px;
+    color: #8aacc8;
+    margin-bottom: 20px;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+}
+
+.intro p {
+    font-size: 20px;
+    color: #d1d1d1;
+    margin-bottom: 30px;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background-color: #2d3248;
+    color: #ddd;
+    padding: 30px;
+    border-radius: 15px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 178, 255, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 178, 255, 0.6);
+}
+
+.feature h3 {
+    font-size: 24px;
+    color: #8aacc8;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.feature p {
+    font-size: 16px;
+}
+
+/* Why Choose Section */
+.why-choose {
+    margin-bottom: 60px;
+}
+
+.why-choose h2 {
+    font-size: 36px;
+    color: #8aacc8;
+    margin-bottom: 40px;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+@media (max-width: 1200px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #232332;
+    color: #d1d1d1;
+    padding: 20px;
+    font-size: 16px;
+    border-top: 2px solid #505a6e;
+}
